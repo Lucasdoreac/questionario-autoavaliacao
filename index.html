@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário de Autoavaliação</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Autoavaliação de Autossabotagem</h1>
+            <p>Identifique padrões que podem estar limitando seu sucesso</p>
+        </header>
+
+        <div id="intro" class="section">
+            <p>Este questionário abrangente foi desenvolvido para ajudar você a identificar comportamentos, pensamentos e hábitos que podem estar prejudicando suas chances de sucesso. Responda com sinceridade para obter resultados mais precisos.</p>
+            <button id="start-btn" class="btn primary">Iniciar Questionário</button>
+        </div>
+
+        <div id="questionnaire" class="section hidden">
+            <div id="progress-container">
+                <div id="progress-bar">
+                    <div id="progress-fill"></div>
+                </div>
+                <div id="progress-text">0%</div>
+            </div>
+
+            <div id="question-container">
+                <!-- Perguntas serão inseridas aqui pelo JavaScript -->
+            </div>
+
+            <div id="navigation">
+                <button id="prev-btn" class="btn secondary" disabled>Anterior</button>
+                <button id="next-btn" class="btn primary">Próxima</button>
+            </div>
+        </div>
+
+        <div id="results" class="section hidden">
+            <h2>Seus Resultados</h2>
+            <div id="overall-score">
+                <h3>Pontuação Geral</h3>
+                <div id="score-gauge">
+                    <div id="gauge-fill"></div>
+                </div>
+                <p id="overall-feedback"></p>
+            </div>
+
+            <div id="category-results">
+                <!-- Resultados por categoria serão inseridos aqui pelo JavaScript -->
+            </div>
+
+            <div id="recommendations">
+                <h3>Recomendações Personalizadas</h3>
+                <div id="recommendation-content">
+                    <!-- Recomendações serão inseridas aqui pelo JavaScript -->
+                </div>
+            </div>
+
+            <button id="restart-btn" class="btn primary">Refazer Questionário</button>
+        </div>
+
+        <footer>
+            <p>Desenvolvido para análise pessoal e desenvolvimento. Os resultados devem ser usados apenas como orientação.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
